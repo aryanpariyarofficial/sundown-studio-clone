@@ -85,5 +85,7 @@ nav{
     font-size: 2vw ;
 }
 .heroRight{
-   
+    width: 30vw;
+   font-size: 4vw;
+   text-align: right;
 }
