@@ -1,0 +1,89 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+    
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    position: relative;
+    padding: 2vw;
+}
+nav{
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItems{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.navItems h4{
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.872);
+    font-style: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: .4s all ease;
+    overflow: hidden;
+}   
+
+.navItems h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    background-color: #000;
+    border-radius: 50px;
+    transition: .4s all ease;
+}
+.navItems h4:hover::after{
+    bottom: 0;
+}
+.navItems h4 a{
+    color: rgba(0, 0, 0, 0.872);
+    z-index: 9;
+    text-decoration: none;
+    position: relative;
+}
+.navItems h4:hover a{
+    color: white;
+   
+}
+/* nav bar code endhere */
+
+.hero{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.heroLeft{
+    width: 30vw;
+    font-size: 2vw ;
+}
+.heroRight{
+   
+}
